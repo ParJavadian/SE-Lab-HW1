@@ -88,10 +88,7 @@
         <b class="stats">FAQ</b>
         <div class="frame-parent15">
           <div class="frame-wrapper4">
-            <div
-              class="how-much-does-it-cost-to-us-aa-parent"
-              onclick="toggleAnswer(this)"
-            >
+            <div class="how-much-does-it-cost-to-us-aa-parent">
               <b class="i-am-a-container" id="cost"
                 >How Much Does it cost to use AA?</b
               >
@@ -106,39 +103,10 @@
               </button>
             </div>
           </div>
-          <script>
-            function toggleAnswer(container) {
-              var answer = container.querySelector(".answer");
-              answer.style.display =
-                answer.style.display === "none" ? "block" : "none";
-
-              //////////
-              let image = document.querySelector(".frame-child111");
-              let currentRotation = image.dataset.rotation || 180;
-              let newRotation = parseInt(currentRotation) + 180;
-              image.style.transform = "rotate(" + newRotation + "deg)";
-              image.dataset.rotation = newRotation;
-            }
-            function toggleAnswer2(container) {
-              var answer = container.querySelector(".answer2");
-              answer.style.display =
-                answer.style.display === "none" ? "block" : "none";
-
-              //////////
-              let image = document.querySelector(".frame-child11");
-              let currentRotation = image.dataset.rotation || 180;
-              let newRotation = parseInt(currentRotation) + 180;
-              image.style.transform = "rotate(" + newRotation + "deg)";
-              image.dataset.rotation = newRotation;
-            }
-          </script>
 
           <div class="frame-wrapper5">
             <div class="frame-parent16">
-              <div
-                class="is-aa-for-specific-country-parent"
-                onclick="toggleAnswer2(this)"
-              >
+              <div class="is-aa-for-specific-country-parent">
                 <b class="i-am-a-container">Is AA For specific country?</b>
                 <div class="answer2">
                   No You can Use AA From Anywhere on the world.
